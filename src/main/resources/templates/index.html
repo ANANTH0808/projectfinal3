@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Management System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+
+<nav class="bg-blue-700 text-white shadow">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Employee Management</h1>
+    <div class="space-x-4">
+      <a th:href="@{/employees}" class="hover:text-blue-200">View Employees</a>
+      <a th:href="@{/employees/new}" class="hover:text-blue-200">Add Employee</a>
+    </div>
+  </div>
+</nav>
+
+
+<header class="text-center py-20 bg-white shadow-md">
+  <h2 class="text-4xl font-bold text-blue-700 mb-4">Welcome to the Employee Management System</h2>
+  <p class="text-gray-600 text-lg mb-6">Effortlessly manage employee data, departments, and performance.</p>
+  <a th:href="@{/employees}" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Get Started</a>
+</header>
+
+
+<section class="container mx-auto px-6 py-12 grid md:grid-cols-3 gap-8 text-center">
+  <div class="bg-white p-6 rounded-lg shadow">
+    <h3 class="text-xl font-bold mb-2">Add Employees</h3>
+    <p class="text-gray-600">Quickly onboard new employees with detailed forms and validations.</p>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow">
+    <h3 class="text-xl font-bold mb-2">View and Edit Records</h3>
+    <p class="text-gray-600">Access and update employee details in real-time through a clean dashboard.</p>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow">
+    <h3 class="text-xl font-bold mb-2">Department Search</h3>
+    <p class="text-gray-600">Search and filter employees by department or age to streamline workflow.</p>
+  </div>
+</section>
+
+
+<footer class="bg-blue-700 text-white text-center py-4">
+  &copy; 2025 Employee Management System
+</footer>
+
+</body>
+</html>

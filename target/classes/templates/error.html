@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Error</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+<div class="container mx-auto p-6 max-w-lg">
+  <h1 class="text-3xl font-bold text-red-600 mb-6 text-center">Error</h1>
+  <div class="bg-white p-6 rounded-lg shadow-md">
+    <p th:text="${errorMessage}" class="text-gray-800 mb-4">An error occurred.</p>
+    <a th:href="@{/employees}" class="inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">Go back to employee list</a>
+  </div>
+</div>
+</body>
+</html>
